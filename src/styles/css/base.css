@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  --main-color: #2c2c2c;
+  --primary-color: #0062ff;
+  --secondary-color: #6c757d;
+  --success-color: #3dd598;
+  --warning-color: #ffc542;
+  --error-color: #fc5a5a;
+  --light-orange-color: #ff974a;
+  --light-blue-color: #50b5ff;
+  --light-green-color: #82c43c;
+  --light-purple-color: #a461d8;
+  --light-pink-color: #ff9ad5;
+  --gray-9: #171725;
+  --gray-8: #44444f;
+  --gray-7: #696974;
+  --gray-6: #92929d;
+  --gray-5: #b5b5be;
+  --gray-4: #d5d5dc;
+  --gray-3: #e2e2ea;
+  --gray-2: #f1f1f5;
+  --gray-1: #fafafb;
+}
+
+* {
+  font-family: "Noto Sans TC", Montserrat, sans-serif;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
