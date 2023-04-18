@@ -1,0 +1,60 @@
+.header{
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(125, 133, 144, 0.8), rgba(127, 134, 145, 0.8)), url("assets/images/canal_1.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0px 0px, 100% 0px, 100% 85%, 0px 100%);
+
+  .banner{
+    color: white;
+    margin-top: 20vh;
+    margin-left: 6vw;
+
+    h1 {
+      font-size: 42px;
+      line-height: 48px;
+      margin-bottom: 30px;
+      animation-name: slid;
+      animation-duration: 1s;
+    }
+  
+    h2 {
+      font-size: 36px;
+      line-height: 40px;
+      animation-name: slid;
+      animation-duration: 1s;
+    }
+
+    @media screen and (min-width:992px) {
+      margin-left: 15vw;
+
+      h1 {
+        font-size: 72px;
+        line-height: 80px;
+        margin-bottom: 30px;
+        animation-name: slid;
+        animation-duration: 1s;
+      }
+    
+      h2 {
+        font-size: 56px;
+        line-height: 60px;
+        animation-name: slid;
+        animation-duration: 1s;
+      }
+    }
+
+
+    @keyframes slid {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px)
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0px)
+      }
+    }
+  }
+}

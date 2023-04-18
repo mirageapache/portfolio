@@ -1,3 +1,6 @@
 .homepage {
   color: var(--main-color);
 }
+.homepage section {
+  border: 1px solid red;
+}
