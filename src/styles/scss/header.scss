@@ -7,12 +7,12 @@
 
   .banner{
     color: white;
-    margin-top: 20vh;
+    padding-top: 20vh;
     margin-left: 6vw;
 
     h1 {
       font-size: 42px;
-      line-height: 48px;
+      line-height: 50px;
       margin-bottom: 30px;
       animation-name: slid;
       animation-duration: 1s;
@@ -20,9 +20,23 @@
   
     h2 {
       font-size: 36px;
-      line-height: 40px;
+      line-height: 44px;
       animation-name: slid;
       animation-duration: 1s;
+    }
+
+    @media screen and (min-width:644px) and (max-width:991px){
+      margin-left: 15vw;
+
+      h1 {
+        font-size: 56px;
+        line-height: 64px;
+      }
+
+      h2 {
+        font-size: 48px;
+        line-height: 56px;
+      }
     }
 
     @media screen and (min-width:992px) {
@@ -31,16 +45,11 @@
       h1 {
         font-size: 72px;
         line-height: 80px;
-        margin-bottom: 30px;
-        animation-name: slid;
-        animation-duration: 1s;
       }
     
       h2 {
         font-size: 56px;
-        line-height: 60px;
-        animation-name: slid;
-        animation-duration: 1s;
+        line-height: 64px;
       }
     }
 

@@ -11,7 +11,7 @@ export default function HomePage(){
     <div className="homepage">
       <Header />
       <AboutMe />
-      <Skill />
+      {/* <Skill /> */}
       <Experience />
       <Portfolio />
       <Contact />

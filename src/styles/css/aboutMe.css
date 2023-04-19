@@ -1,0 +1,88 @@
+.about_me {
+  --animate_time: 2s;
+  --animate_type: ease;
+  padding: 6vh;
+}
+.about_me .title_div {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about_me .title_div .title {
+  font-size: 3.5em;
+  color: rgb(113, 155, 227);
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity var(--animate_time) var(--animate_type);
+  transition: transform var(--animate_time) var(--animate_type);
+}
+.about_me .title_div .title_animate {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.about_me .content_div {
+  display: flex;
+  justify-content: center;
+}
+.about_me .content_div .grid_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  max-width: 1100px;
+}
+.about_me .content_div .grid_div .avatar {
+  overflow: hidden;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity var(--animate_time) var(--animate_type);
+  transition: transform var(--animate_time) var(--animate_type);
+}
+.about_me .content_div .grid_div .avatar .avatar_img {
+  height: 70vh;
+}
+.about_me .content_div .grid_div .avatar_animate {
+  opacity: 1;
+  transform: translatex(0px);
+}
+.about_me .content_div .grid_div .content {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity var(--animate_time) var(--animate_type);
+  transition: transform var(--animate_time) var(--animate_type);
+}
+.about_me .content_div .grid_div .content p {
+  color: var(--main-color);
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+.about_me .content_div .grid_div .content h3 {
+  color: var(--light-orange-color);
+  margin: 10px;
+}
+.about_me .content_div .grid_div .content_animate {
+  opacity: 1;
+  transform: translateX(0px);
+}
+@media screen and (max-width: 750px) {
+  .about_me .content_div .grid_div {
+    grid-template-columns: 1fr;
+  }
+  .about_me .content_div .grid_div .avatar {
+    width: 50vw;
+    min-width: 250px;
+    max-width: 350px;
+    height: 50vw;
+    min-height: 250px;
+    max-height: 350px;
+    border-radius: 50%;
+  }
+  .about_me .content_div .grid_div .avatar .avatar_img {
+    height: 500px;
+    margin-top: -100px;
+    margin-left: -20px;
+  }
+}

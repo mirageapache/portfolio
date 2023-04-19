@@ -7,8 +7,6 @@ export default function Header(){
         <div className="banner">
           <h1>Hi, I'm James</h1>
           <h2>Welcome to my website</h2>
-
-      
         </div>
       </section>
     </>
