@@ -8,7 +8,7 @@ export default function AboutMe(){
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;
     if (scrollTop + clientHeight > (clientHeight*1.5)) {
-      const title = document.querySelector('.title');
+      const title = document.querySelector('.about_title');
       title.classList.add('title_animate');
       const avatar = document.querySelector('.avatar');
       avatar.classList.add('avatar_animate');
@@ -21,7 +21,7 @@ export default function AboutMe(){
     <>
       <section className="about_me">
         <div className="title_div">
-          <h1 className="title">About Me</h1>
+          <h1 className="title about_title">ABOUT ME</h1>
         </div>
         <div className="content_div">
           <div className='grid_div'>

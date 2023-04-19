@@ -1,9 +1,33 @@
-.homepage{
+  .homepage{
   color: var(--main-color);
   position: relative;
+  // ---
+  --animate_time: 2s;
+  --animate_type: ease;
+
   
   section{
+    padding: 6vh;
     // border: 1px solid red;
+    .title_div {
+        text-align: center;
+        margin-bottom: 50px;
+    
+        .title {
+          font-size: 3.5em;
+          color: rgb(113, 155, 227);
+          // 動態載入效果
+          opacity: 0;
+          transform: translateY(-50px);
+          transition: opacity var(--animate_time) var(--animate_type);
+          transition: transform var(--animate_time) var(--animate_type);
+        }
+    
+        .title_animate {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
   }
 
 }

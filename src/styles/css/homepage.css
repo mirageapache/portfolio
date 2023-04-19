@@ -1,4 +1,25 @@
 .homepage {
   color: var(--main-color);
   position: relative;
+  --animate_time: 2s;
+  --animate_type: ease;
+}
+.homepage section {
+  padding: 6vh;
+}
+.homepage section .title_div {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.homepage section .title_div .title {
+  font-size: 3.5em;
+  color: rgb(113, 155, 227);
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity var(--animate_time) var(--animate_type);
+  transition: transform var(--animate_time) var(--animate_type);
+}
+.homepage section .title_div .title_animate {
+  opacity: 1;
+  transform: translateY(0px);
 }

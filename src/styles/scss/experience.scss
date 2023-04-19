@@ -1,0 +1,83 @@
+.experience{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .secquence{
+    position: relative;
+    width: 80vw;
+    max-width: 1000px;
+
+    .secquence_item{
+      position: relative;
+      padding: 15px;
+      padding-left: 120px;
+
+      span{
+        color: white;
+        background-color: var(--light-orange-color);
+        padding: 5px 10px;
+      }
+      span::before{
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 70px;
+        background-color: white;
+        border: 8px solid var(--light-orange-color);
+        border-radius: 50px;
+        padding: 5px;
+        z-index: 1;
+      }
+
+      h3{
+        font-size: 1.5em;
+        margin: 25px 0;
+      }
+
+      p{
+        font-size: 1.2em;
+        line-height: 1.5em;
+      }
+
+      .tag_div{
+        margin: 20px 0 10px 0;
+
+        .tag{
+          color: var(--light-orange-color);
+          margin-right: 10px;
+          border: 2px solid var(--light-orange-color);
+          border-radius: 20px;
+          padding: 5px 15px;
+        }
+      }
+
+    }
+    div::before{
+      content:'';
+      top: 15px;
+      left: 82px;
+      position: absolute;
+      border-left: 3px solid gray;
+      height: 100%;
+    }
+
+    // 小螢幕樣式
+    @media screen and (max-width:750px) {
+      .secquence_item{
+        padding-left: 50px;
+        
+        span::before {
+          left: 0;
+        }
+      }
+      div::before {
+        left: 12px;
+      }
+    }
+    
+
+  }
+}
