@@ -24,7 +24,7 @@
 }
 .about_me .content_div .grid_div .avatar_animate {
   opacity: 1;
-  transform: translatex(0px);
+  transform: translateX(0px);
 }
 .about_me .content_div .grid_div .content {
   opacity: 0;

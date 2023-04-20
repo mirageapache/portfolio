@@ -5,7 +5,7 @@ export default function Experience(){
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;
-    if (scrollTop + clientHeight > (clientHeight*2.5)) {
+    if (scrollTop + clientHeight > (clientHeight*3.5)) {
       const title = document.querySelector('.exp_title');
       title.classList.add('title_animate');
     }
