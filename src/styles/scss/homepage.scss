@@ -5,17 +5,16 @@
   --animate_time: 2s;
   --animate_type: ease;
 
-  
   section{
     padding: 6vh;
     
     .title_div {
-        text-align: center;
         margin-bottom: 50px;
     
         .title {
           font-size: 3.5em;
           color: var(--light-blue-color);
+          text-align: center;
           // 動態載入效果
           opacity: 0;
           transform: translateY(-50px);

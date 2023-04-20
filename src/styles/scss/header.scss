@@ -9,20 +9,22 @@
     color: white;
     padding-top: 20vh;
     margin-left: 6vw;
+    
+    *{
+      text-align: left;
+      animation-name: slid;
+      animation-duration: 2s;
+    }
 
     h1 {
       font-size: 42px;
       line-height: 50px;
       margin-bottom: 30px;
-      animation-name: slid;
-      animation-duration: 1s;
     }
   
     h2 {
       font-size: 36px;
       line-height: 44px;
-      animation-name: slid;
-      animation-duration: 1s;
     }
 
     @media screen and (min-width:644px) and (max-width:991px){
@@ -52,7 +54,6 @@
         line-height: 64px;
       }
     }
-
 
     @keyframes slid {
       0% {

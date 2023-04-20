@@ -4,9 +4,7 @@
   background-size: cover;
   background-position: center;
   clip-path: polygon(0px 10%, 50% 0px, 100% 0px, 100% 90%, 50% 100%, 0px 100%);
-  // display: flex;
-  // justify-content: center;
-  
+
   .title_div{
     margin-top: 50px;
   }
@@ -61,17 +59,17 @@
       .lang_item{
         display: flex;
         flex-direction: column;
-        text-align: center;
-      }
-
-      
+        label{
+          text-align: center;
+        }
+      }      
     }
-    
   }
   .card_animate {
     opacity: 1;
     transform: translateY(0px);
   }
+
   @media screen and (max-width:850px) {
     .card_panel{
       flex-direction: column;

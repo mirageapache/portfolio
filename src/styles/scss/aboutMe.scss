@@ -40,13 +40,12 @@
 
         p{
           color: var(--main-color);
+          max-width: 400px;
           font-size: 1.2em;
           line-height: 1.5em;
           margin-bottom: 1.5em;
-        }
-        h3{
-          color: var(--light-orange-color);
-          margin: 10px;
+          margin-left: 15px;
+          
         }
       }
       .content_animate {

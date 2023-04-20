@@ -39,11 +39,6 @@ export default function AboutMe(){
                 後端技術為輔的選課機制，全心專攻前端專業能力，並學會ReactJS前端框架的基本運用，
                 持續學習、研究前端各項新技能，期望有朝一日成為頂尖的軟體工程師。
               </p>
-              <h3>- HTML5</h3>
-              <h3>- CSS & SCSS</h3>
-              <h3>- JavaScript & ReactJS</h3>
-              <h3>- NodeJS & Express</h3>
-              <h3>- Git</h3>
             </div>
           </div>
         </div>

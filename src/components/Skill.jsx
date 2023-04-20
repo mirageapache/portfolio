@@ -2,7 +2,12 @@ import 'styles/css/skill.css'
 import { ReactComponent as IconCode} from 'assets/icons/code.svg'
 import { ReactComponent as IconGlobe} from 'assets/icons/globe.svg'
 
-const web_dev = ['HTML5', 'CSS/SCSS', 'Bootrstrap', 'JavaScript', 'NodeJs', 'Express', 'ReactJS', 'Git'];
+const web_dev = ['HTML5', 'CSS/SCSS',
+                  'Bootrstrap', 'JavaScript',
+                  'NodeJs', 'Express',
+                  'Axios', 'TypeScript',
+                  'ReactJS', 'Git'
+                ];
 const language = ['Chinese', 'Taiwanese', 'English', 'French'];
 
 

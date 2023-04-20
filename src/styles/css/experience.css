@@ -14,6 +14,10 @@
   position: relative;
   padding: 15px;
   padding-left: 120px;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity var(--animate_time) var(--animate_type);
+  transition: transform var(--animate_time) var(--animate_type);
 }
 .experience .secquence .secquence_item span {
   color: white;
@@ -38,16 +42,15 @@
 .experience .secquence .secquence_item p {
   font-size: 1.2em;
   line-height: 1.5em;
-}
-.experience .secquence .secquence_item .tag_div {
-  margin: 20px 0 10px 0;
+  margin-bottom: 20px;
 }
 .experience .secquence .secquence_item .tag_div .tag {
+  display: inline-block;
   color: var(--light-orange-color);
-  margin-right: 10px;
   border: 2px solid var(--light-orange-color);
   border-radius: 20px;
-  padding: 5px 15px;
+  margin: 10px 10px 0 0;
+  padding: 10px 15px;
 }
 .experience .secquence div::before {
   content: "";
@@ -56,6 +59,10 @@
   position: absolute;
   border-left: 3px solid gray;
   height: 100%;
+}
+.experience .secquence .secq_animate {
+  opacity: 1;
+  transform: translateY(0px);
 }
 @media screen and (max-width: 750px) {
   .experience .secquence .secquence_item {

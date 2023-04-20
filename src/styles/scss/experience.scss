@@ -14,6 +14,11 @@
       position: relative;
       padding: 15px;
       padding-left: 120px;
+      // 動態載入效果
+      opacity: 0;
+      transform: translateY(-100px);
+      transition: opacity var(--animate_time) var(--animate_type);
+      transition: transform var(--animate_time) var(--animate_type);
 
       span{
         color: white;
@@ -40,17 +45,17 @@
       p{
         font-size: 1.2em;
         line-height: 1.5em;
+        margin-bottom: 20px;
       }
 
       .tag_div{
-        margin: 20px 0 10px 0;
-
         .tag{
+          display: inline-block;
           color: var(--light-orange-color);
-          margin-right: 10px;
           border: 2px solid var(--light-orange-color);
           border-radius: 20px;
-          padding: 5px 15px;
+          margin: 10px 10px 0 0;
+          padding: 10px 15px;
         }
       }
 
@@ -62,6 +67,11 @@
       position: absolute;
       border-left: 3px solid gray;
       height: 100%;
+    }
+
+    .secq_animate{
+      opacity: 1;
+      transform: translateY(0px);
     }
 
     // 小螢幕樣式

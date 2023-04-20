@@ -34,13 +34,11 @@
 }
 .about_me .content_div .grid_div .content p {
   color: var(--main-color);
+  max-width: 400px;
   font-size: 1.2em;
   line-height: 1.5em;
   margin-bottom: 1.5em;
-}
-.about_me .content_div .grid_div .content h3 {
-  color: var(--light-orange-color);
-  margin: 10px;
+  margin-left: 15px;
 }
 .about_me .content_div .grid_div .content_animate {
   opacity: 1;

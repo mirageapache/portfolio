@@ -55,6 +55,8 @@
 .skill .card_panel .card .lang_item {
   display: flex;
   flex-direction: column;
+}
+.skill .card_panel .card .lang_item label {
   text-align: center;
 }
 .skill .card_animate {
