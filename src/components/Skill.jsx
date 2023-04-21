@@ -1,6 +1,7 @@
 import 'styles/css/skill.css'
 import { ReactComponent as IconCode} from 'assets/icons/code.svg'
 import { ReactComponent as IconGlobe} from 'assets/icons/globe.svg'
+import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 
 const web_dev = ['HTML5', 'CSS/SCSS',
                   'Bootrstrap', 'JavaScript',
@@ -12,6 +13,10 @@ const language = ['Chinese', 'Taiwanese', 'English', 'French'];
 
 
 export default function Skill(){
+  function handleScroll(){
+    window.scrollTo({ top: window.innerHeight*3+115, behavior: 'smooth'});
+  }
+
   // 監聽頁面捲動
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
@@ -33,6 +38,9 @@ export default function Skill(){
         <div className='card_panel'>
           <Card title='Web development' icon={<IconCode />} style_name='dev_item' list={web_dev}/>
           <Card title='Language' icon={<IconGlobe />} style_name='lang_item' list={language}/>
+        </div>
+        <div className='scroll_btn_div'>
+          <IconDownArrow className='scroll_btn' onClick={handleScroll}/>
         </div>
       </section>
     </>

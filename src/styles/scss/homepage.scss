@@ -6,30 +6,75 @@
   --animate_type: ease;
 
   section{
-    // min-height: 100vh;
+    position: relative;
     padding: 6vh;
     
     .title_div {
-        margin-bottom: 50px;
-    
-        .title {
-          font-size: 3.5em;
-          color: var(--light-blue-color);
-          text-align: center;
-          // 動態載入效果
-          opacity: 0;
-          transform: translateY(-50px);
-          transition: transform var(--animate_time) var(--animate_type), opacity var(--animate_time) var(--animate_type);
-        }
-        .skill_title, .portfolio_title{
-          color: white;
-        }
-    
-        .title_animate {
-          opacity: 1;
-          transform: translateY(0px);
-        }
+      margin-bottom: 50px;
+  
+      .title {
+        font-size: 3.5em;
+        color: var(--light-blue-color);
+        text-align: center;
+        // 動態載入效果
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: transform var(--animate_time) var(--animate_type), opacity var(--animate_time) var(--animate_type);
       }
+      .skill_title, .portfolio_title{
+        color: white;
+      }
+  
+      .title_animate {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
   }
 
+  .scroll_btn_div{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+
+    *{
+      cursor: pointer;
+    }
+    .scroll_btn{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      z-index: 2;
+      
+      path{
+        fill: var(--light-orange-color);
+      }
+
+      &:hover {
+        animation: beat 0.8s infinite;
+      }
+     
+    }
+    &::after {
+      content: '';
+      background-color: white;
+      z-index: 1;
+      margin-top: 8px;
+      padding: 17px 15px;
+    }
+    
+    @keyframes beat {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
 }

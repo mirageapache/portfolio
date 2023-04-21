@@ -7,7 +7,7 @@ export default function Contact(){
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;
-    if (scrollTop + clientHeight > (clientHeight*3.5)) {
+    if (scrollTop + clientHeight > (clientHeight*6)) {
       const title = document.querySelector('.contact_title');
       title.classList.add('title_animate');
       const contact_list = document.querySelector('.contact_list');

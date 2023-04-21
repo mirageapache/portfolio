@@ -1,7 +1,11 @@
 import 'styles/css/aboutMe.css'
 import avatar from 'assets/images/avatar.jpg';
+import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 
 export default function AboutMe(){
+  function handleScroll(){
+    window.scrollTo({ top: window.innerHeight*2+100, behavior: 'smooth'});
+  }
 
   // 監聽頁面捲動
   window.addEventListener('scroll', () => {
@@ -41,6 +45,9 @@ export default function AboutMe(){
               </p>
             </div>
           </div>
+        </div>
+        <div className='scroll_btn_div'>
+          <IconDownArrow className='scroll_btn' onClick={handleScroll}/>
         </div>
       </section>
     </>

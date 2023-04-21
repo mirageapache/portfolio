@@ -1,12 +1,16 @@
 import 'styles/css/portfolio.css';
 import { portfolio_data } from 'assets/dummyData/portfolio_data.js';
+import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 
 export default function Portfolio(){ 
+  function handleScroll(){
+    window.scrollTo({ top: window.innerHeight*6, behavior: 'smooth'});
+  }
   // 監聽頁面捲動
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;
-    if (scrollTop + clientHeight > (clientHeight*4.5)) {
+    if (scrollTop + clientHeight > (clientHeight*5)) {
       const title = document.querySelector('.portfolio_title');
       title.classList.add('title_animate');
       const project = document.querySelector('.project');
@@ -29,6 +33,9 @@ export default function Portfolio(){
         </div>
         <div className='project'>
           <ProjectItem data={portfolio_data}/>
+        </div>
+        <div className='scroll_btn_div'>
+          <IconDownArrow className='scroll_btn' onClick={handleScroll}/>
         </div>
       </section>
     </>

@@ -1,7 +1,12 @@
 import 'styles/css/experience.css'
 import { secq_data } from 'assets/dummyData/exp_data.js'
+import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 
 export default function Experience(){
+  function handleScroll(){
+    window.scrollTo({ top: window.innerHeight*5-100, behavior: 'smooth'});
+  }
+
   // 監聽頁面捲動
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
@@ -33,6 +38,9 @@ export default function Experience(){
         </div>
         <div className='secquence'>
           {secquence_data}
+        </div>
+        <div className='scroll_btn_div'>
+          <IconDownArrow className='scroll_btn' onClick={handleScroll}/>
         </div>
       </section>
     </>
