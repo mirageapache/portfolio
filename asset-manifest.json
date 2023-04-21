@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.50369825.css",
+    "main.js": "/portfolio/static/js/main.be0aa849.js",
+    "static/media/simple_twitter.png": "/portfolio/static/media/simple_twitter.37950f6760aa4c0efb68.png",
+    "static/media/canal_1.jpg": "/portfolio/static/media/canal_1.30887786c304144d5641.jpg",
+    "static/media/avatar.jpg": "/portfolio/static/media/avatar.85a82c4ab3fd9ac9aa0c.jpg",
+    "static/media/github_issue.jpg": "/portfolio/static/media/github_issue.80ea12c7f28c1bbbfd6e.jpg",
+    "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.03c68d78c3d0c07fc3bb.jpg",
+    "static/media/skill_page.jpg": "/portfolio/static/media/skill_page.d3b5e6b9de749b0b1ea0.jpg",
+    "static/media/github.svg": "/portfolio/static/media/github.ebd452bf402237ef25876cdcac686676.svg",
+    "static/media/globe.svg": "/portfolio/static/media/globe.2e98d887a7dedf202ab77e2707307826.svg",
+    "static/media/instagram.svg": "/portfolio/static/media/instagram.116ad97e1f8e0638fcb7d5aed6800697.svg",
+    "static/media/code.svg": "/portfolio/static/media/code.810ff813fa4beab8f343068e8f521d42.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/email.svg": "/portfolio/static/media/email.7df8d589eacd0a7f40f5685b6e551065.svg",
+    "static/media/arrow_down.svg": "/portfolio/static/media/arrow_down.dd1d0bacbe7b907998696bf4e5570fe8.svg",
+    "main.50369825.css.map": "/portfolio/static/css/main.50369825.css.map",
+    "main.be0aa849.js.map": "/portfolio/static/js/main.be0aa849.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50369825.css",
+    "static/js/main.be0aa849.js"
+  ]
+}
