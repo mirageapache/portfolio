@@ -5,6 +5,7 @@
   --animate_type: ease;
 }
 .homepage section {
+  min-height: 100vh;
   padding: 6vh;
 }
 .homepage section .title_div {
@@ -19,7 +20,7 @@
   transition: opacity var(--animate_time) var(--animate_type);
   transition: transform var(--animate_time) var(--animate_type);
 }
-.homepage section .title_div .skill_title {
+.homepage section .title_div .skill_title, .homepage section .title_div .portfolio_title {
   color: white;
 }
 .homepage section .title_div .title_animate {

@@ -12,7 +12,7 @@ const language = ['Chinese', 'Taiwanese', 'English', 'French'];
 
 
 export default function Skill(){
-
+  // 監聽頁面捲動
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;

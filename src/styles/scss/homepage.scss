@@ -6,6 +6,7 @@
   --animate_type: ease;
 
   section{
+    min-height: 100vh;
     padding: 6vh;
     
     .title_div {
@@ -21,7 +22,7 @@
           transition: opacity var(--animate_time) var(--animate_type);
           transition: transform var(--animate_time) var(--animate_type);
         }
-        .skill_title{
+        .skill_title, .portfolio_title{
           color: white;
         }
     
