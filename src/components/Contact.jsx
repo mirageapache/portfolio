@@ -1,7 +1,8 @@
 import 'styles/css/contact.css';
 import { ReactComponent as IconEmail } from 'assets/icons/email.svg';
 import { ReactComponent as IconGithub } from 'assets/icons/github.svg';
-import { ReactComponent as IconInstagram } from 'assets/icons/instagram.svg';
+import { ReactComponent as IconLinkedIn } from 'assets/icons/linkedin.svg';
+// import { ReactComponent as IconInstagram } from 'assets/icons/instagram.svg';
 
 export default function Contact(){
   window.addEventListener('scroll', () => {
@@ -40,12 +41,18 @@ export default function Contact(){
               <h3 className='item_title'>Github</h3>
             </div>
           </div>
-          <div className='contact_card' onClick={()=>{window.open('https://www.instagram.com/mirageapache/','_blank')}}>
+          <div className='contact_card' onClick={()=>{window.open('https://www.linkedin.com/in/james-859032112/','_blank')}}>
+            <div className='item'>
+              <IconLinkedIn className='icon Linkedin_icon' />
+              <h3 className='item_title'>Linkedin</h3>
+            </div>
+          </div>
+          {/* <div className='contact_card' onClick={()=>{window.open('https://www.instagram.com/mirageapache/','_blank')}}>
             <div className='item'>
               <IconInstagram className='icon instagram_icon' />
               <h3 className='item_title'>instagram</h3>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
