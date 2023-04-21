@@ -1,0 +1,14 @@
+.footer {
+  height: 50px;
+  background-color: var(--gray-8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  color: white;
+}
+.footer p a {
+  cursor: pointer;
+  color: var(--light-orange-color);
+}

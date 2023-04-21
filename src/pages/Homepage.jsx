@@ -4,6 +4,7 @@ import Skill from 'components/Skill.jsx';
 import Experience from 'components/Experience.jsx';
 import Portfolio from 'components/Portfolio.jsx';
 import Contact from 'components/Contact.jsx';
+import Footer from 'components/Footer.jsx';
 import 'styles/css/homepage.css';
 
 export default function HomePage(){
@@ -15,6 +16,7 @@ export default function HomePage(){
       <Experience />
       <Portfolio />
       <Contact />
+      <Footer />
     </div>
   )
 }

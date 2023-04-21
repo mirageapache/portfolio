@@ -30,10 +30,12 @@
   background-color: var(--light-orange-color);
   box-shadow: 6px 6px 12px 3px rgba(0, 0, 0, 0.5);
 }
+.contact .contact_list .contact_card .item * {
+  cursor: pointer;
+}
 .contact .contact_list .contact_card .item .icon {
   width: 50px;
   height: 50px;
-  cursor: pointer;
 }
 .contact .contact_list .contact_card .item .icon path {
   fill: white;
@@ -43,7 +45,6 @@
   line-height: 1.5em;
   margin-top: 15px;
   color: white;
-  cursor: pointer;
 }
 .contact .contact_list .item_animate {
   opacity: 1;
