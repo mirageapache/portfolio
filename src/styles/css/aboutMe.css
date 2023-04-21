@@ -16,8 +16,7 @@
   margin-bottom: 40px;
   opacity: 0;
   transform: translateX(-100px);
-  transition: opacity var(--animate_time) var(--animate_type);
-  transition: transform var(--animate_time) var(--animate_type);
+  transition: transform var(--animate_time) var(--animate_type), opacity var(--animate_time) var(--animate_type);
 }
 .about_me .content_div .grid_div .avatar .avatar_img {
   height: 70vh;
@@ -29,8 +28,7 @@
 .about_me .content_div .grid_div .content {
   opacity: 0;
   transform: translateX(100px);
-  transition: opacity var(--animate_time) var(--animate_type);
-  transition: transform var(--animate_time) var(--animate_type);
+  transition: transform var(--animate_time) var(--animate_type), opacity var(--animate_time) var(--animate_type);
 }
 .about_me .content_div .grid_div .content p {
   color: var(--main-color);

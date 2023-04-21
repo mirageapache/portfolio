@@ -25,10 +25,9 @@
       border-radius: 6px;
       padding: 15px;
       // 動態載入效果
-        opacity: 0;
-        transform: translateY(-100px);
-        transition: opacity var(--animate_time) var(--animate_type);
-        transition: transform var(--animate_time) var(--animate_type);
+      opacity: 0;
+      transform: translateY(-100px);
+      transition: transform var(--animate_time) var(--animate_type), opacity var(--animate_time) var(--animate_type);
       
       .snapshot_div{
         position: relative;

@@ -15,8 +15,7 @@
   align-items: center;
   opacity: 0;
   transform: translateY(-100px);
-  transition: opacity var(--animate_time) var(--animate_type);
-  transition: transform var(--animate_time) var(--animate_type);
+  transition: transform var(--animate_time) var(--animate_type), opacity var(--animate_time) var(--animate_type);
 }
 .skill .card_panel .card {
   background-color: rgba(236, 236, 236, 0.8);
