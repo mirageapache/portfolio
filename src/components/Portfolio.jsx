@@ -10,7 +10,7 @@ export default function Portfolio(){
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;
-    if (scrollTop + clientHeight > (clientHeight*5)) {
+    if (scrollTop + clientHeight > (clientHeight*5.3)) {
       const title = document.querySelector('.portfolio_title');
       title.classList.add('title_animate');
       const project = document.querySelector('.project');
