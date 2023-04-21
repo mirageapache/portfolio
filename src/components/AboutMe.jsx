@@ -4,7 +4,7 @@ import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 
 export default function AboutMe(){
   function handleScroll(){
-    window.scrollTo({ top: window.innerHeight*2+100, behavior: 'smooth'});
+    window.scrollTo({ top: window.innerHeight*2+120, behavior: 'smooth'});
   }
 
   // 監聽頁面捲動

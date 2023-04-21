@@ -14,7 +14,7 @@ const language = ['Chinese', 'Taiwanese', 'English', 'French'];
 
 export default function Skill(){
   function handleScroll(){
-    window.scrollTo({ top: window.innerHeight*3+115, behavior: 'smooth'});
+    window.scrollTo({ top: window.innerHeight*3+195, behavior: 'smooth'});
   }
 
   // 監聽頁面捲動
