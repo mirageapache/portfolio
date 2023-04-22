@@ -64,3 +64,8 @@
     transform: scale(1);
   }
 }
+@media screen and (max-width: 992px) {
+  .homepage .scroll_btn_div {
+    display: none;
+  }
+}

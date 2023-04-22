@@ -32,6 +32,8 @@
     }
   }
 
+  
+  
   .scroll_btn_div{
     margin: 20px 0;
     display: flex;
@@ -53,7 +55,7 @@
       &:hover {
         animation: beat 0.8s infinite;
       }
-     
+    
     }
     &::after {
       content: '';
@@ -77,4 +79,10 @@
       }
     }
   }
+  @media screen and (max-width:992px) {
+    .scroll_btn_div{
+      display: none;
+    }
+  }
+  
 }
