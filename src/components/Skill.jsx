@@ -6,7 +6,7 @@ import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 const web_dev = ['HTML5', 'CSS/SCSS',
                   'Bootrstrap', 'JavaScript',
                   'NodeJs', 'Express',
-                  'Axios', 'TypeScript',
+                  'Axios',
                   'ReactJS', 'Git'
                 ];
 const language = ['Chinese', 'Taiwanese', 'English', 'French'];
