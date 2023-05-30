@@ -4,14 +4,16 @@ import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 
 export default function Experience(){
   function handleScroll(){
-    window.scrollTo({ top: window.innerHeight*5+50, behavior: 'smooth'});
+    let next_section = document.querySelector('#portfolio_section');
+    window.scrollTo({ top: next_section.offsetTop, behavior: 'smooth'});
   }
 
   // 監聽頁面捲動
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;
-    if (scrollTop + clientHeight > (clientHeight*3.5)) {
+    const section = document.querySelector('#experience_section');
+    if (scrollTop + clientHeight > (section.offsetTop + clientHeight*0.5)) {
       const title = document.querySelector('.exp_title');
       title.classList.add('title_animate');
       const secq = document.querySelector('.secquence');
@@ -32,7 +34,7 @@ export default function Experience(){
 
   return(
     <>
-      <section className="experience">
+      <section id='experience_section' className="experience">
         <div className='title_div'>
           <h1 className='title exp_title'>EXPERIENCE</h1>
         </div>

@@ -8,7 +8,8 @@ export default function Contact(){
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;
-    if (scrollTop + clientHeight > (clientHeight*6)) {
+    const section = document.querySelector('#contact_section');
+    if (scrollTop + clientHeight > (section.offsetTop + clientHeight*0.5)) {
       const title = document.querySelector('.contact_title');
       title.classList.add('title_animate');
       const contact_list = document.querySelector('.contact_list');
@@ -24,7 +25,7 @@ export default function Contact(){
   });
   return(
     <>
-      <section className="contact">
+      <section id='contact_section' className="contact">
         <div className="title_div">
           <h1 className="title contact_title">CONTACT</h1>
         </div>

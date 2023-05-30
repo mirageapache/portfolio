@@ -4,14 +4,16 @@ import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 
 export default function AboutMe(){
   function handleScroll(){
-    window.scrollTo({ top: window.innerHeight*2+120, behavior: 'smooth'});
+    let next_section = document.querySelector('#skill_section');
+    window.scrollTo({ top: next_section.offsetTop, behavior: 'smooth'});
   }
 
   // 監聽頁面捲動
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;
-    if (scrollTop + clientHeight > (clientHeight*1.5)) {
+    const section = document.querySelector('#about_me_section');
+    if (scrollTop + clientHeight > (section.offsetTop + clientHeight*0.5)) {
       const title = document.querySelector('.about_title');
       title.classList.add('title_animate');
       const avatar = document.querySelector('.avatar');
@@ -23,7 +25,7 @@ export default function AboutMe(){
 
   return(
     <>
-      <section className="about_me">
+      <section id='about_me_section' className="about_me">
         <div className="title_div">
           <h1 className="title about_title">ABOUT ME</h1>
         </div>

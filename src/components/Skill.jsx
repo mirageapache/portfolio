@@ -14,14 +14,16 @@ const language = ['Chinese', 'Taiwanese', 'English', 'French'];
 
 export default function Skill(){
   function handleScroll(){
-    window.scrollTo({ top: window.innerHeight*3+195, behavior: 'smooth'});
+    let next_section = document.querySelector('#experience_section');
+    window.scrollTo({ top: next_section.offsetTop, behavior: 'smooth'});
   }
 
   // 監聽頁面捲動
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;
-    if (scrollTop + clientHeight > (clientHeight*2.5)) {
+    const section = document.querySelector('#skill_section');
+    if (scrollTop + clientHeight > (section.offsetTop + clientHeight*0.5)) {
       const title = document.querySelector('.skill_title');
       title.classList.add('title_animate');
       const card = document.querySelector('.card_panel');
@@ -31,7 +33,7 @@ export default function Skill(){
 
   return(
     <>
-      <section className="skill">
+      <section id='skill_section' className="skill">
         <div className="title_div">
           <h1 className="title skill_title">SKILL</h1>
         </div>

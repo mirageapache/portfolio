@@ -4,13 +4,15 @@ import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 
 export default function Portfolio(){ 
   function handleScroll(){
-    window.scrollTo({ top: window.innerHeight*6, behavior: 'smooth'});
+    let next_section = document.querySelector('#contact_section');
+    window.scrollTo({ top: next_section.offsetTop, behavior: 'smooth'});
   }
   // 監聽頁面捲動
   window.addEventListener('scroll', () => {
     const scrollTop = Math.max(window.scrollY, window.pageYOffset);
     const clientHeight = window.innerHeight;
-    if (scrollTop + clientHeight > (clientHeight*5.3)) {
+    const section = document.querySelector('#portfolio_section');
+    if (scrollTop + clientHeight > (section.offsetTop + clientHeight*0.5)) {
       const title = document.querySelector('.portfolio_title');
       title.classList.add('title_animate');
       const project = document.querySelector('.project');
@@ -27,7 +29,7 @@ export default function Portfolio(){
 
   return(
     <>
-      <section className="portfolio">
+      <section id='portfolio_section' className="portfolio">
         <div className="title_div">
           <h1 className="title portfolio_title">PORTFOLIO</h1>
         </div>

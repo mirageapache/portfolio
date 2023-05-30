@@ -4,7 +4,8 @@ import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 export default function Header(){
 
   function handleScroll(){
-    window.scrollTo({ top: window.innerHeight, behavior: 'smooth'});
+    let section = document.querySelector('#about_me_section');
+    window.scrollTo({ top: section.offsetTop, behavior: 'smooth'});
   }
 
   return(
