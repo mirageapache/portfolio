@@ -2,8 +2,7 @@ import simple_twitter from 'assets/project_img/simple_twitter.png';
 import github_issue from 'assets/project_img/github_issue.jpg';
 import my_portfolio from 'assets/project_img/portfolio.jpg';
 import simple_dashboard from 'assets/project_img/simple_dashboard.jpg';
-
-
+import live_chat_app from 'assets/project_img/live_chat_app.jpg';
 
 export const portfolio_data = [
   {
@@ -33,5 +32,12 @@ export const portfolio_data = [
     'content': '簡易的戶口統計網站，串接政府資料開放平臺所提供的API資料，並以圖表型式呈現。',
     'link': 'https://github.com/mirageapache/Simple_Dashboard',
     'tag': ['Scss', 'React', 'axios', 'TypeScript', 'Highcharts']
+  },
+  {
+    'image': live_chat_app,
+    'title': 'Live Chat',
+    'content': '使用 React 框架搭配 Socket.io 套件，製作線上聊天室系統。',
+    'link': 'https://github.com/mirageapache/Socketio_chat_app',
+    'tag': ['Scss', 'React', 'TypeScript', 'Socket.io', 'Express']
   },
 ]
