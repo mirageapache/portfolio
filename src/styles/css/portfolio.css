@@ -60,7 +60,7 @@
   height: 210px;
 }
 .portfolio .project .project_item .snapshot_div::after {
-  content: "Check it out";
+  content: "Github Link";
   position: absolute;
   font-size: 1.4em;
   font-weight: 700;
@@ -80,6 +80,11 @@
 .portfolio .project .project_item .description .title {
   font-size: 1.2em;
   font-weight: 800;
+}
+.portfolio .project .project_item .description .demo_link {
+  font-weight: 700;
+  color: rgb(57, 113, 244);
+  cursor: pointer;
 }
 .portfolio .project .project_item .description .tags_div .tag {
   display: inline-block;

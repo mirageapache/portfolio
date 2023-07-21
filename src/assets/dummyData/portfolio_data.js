@@ -10,13 +10,15 @@ export const portfolio_data = [
     'title': 'My Portfolio',
     'content': '個人網站，使用 React 框架及 RWD 模式開發，並使用Github Pages部署。',
     'link': 'https://github.com/mirageapache/portfolio',
-    'tag': ['React', 'Scss', 'Github Pages']
+    'demo_link': 'https://mirageapache.github.io/portfolio/',
+    'tag': ['React', 'SCSS', 'Github Pages']
   },
   {
     'image': simple_twitter,
     'title': 'Simple Twitter',
     'content': 'AC的畢業專題，與組員一起完成一個簡易的社群平台系統。',
     'link': 'https://github.com/mirageapache/simple_twitter_frontend',
+    'demo_link': '',
     'tag': ['React', 'axios', 'Github Pages','多人協作']
   },
   {
@@ -24,20 +26,23 @@ export const portfolio_data = [
     'title': 'Github Issue',
     'content': '使用React開發並透過Express串接Github提供的API，可以簡易的操作個人Github Issue。',
     'link': 'https://github.com/mirageapache/github_issue_client',
-    'tag': ['Scss', 'Bootstrap', 'React', 'axios', 'Express']
+    'demo_link': 'https://mirageapache.github.io/github_issue_client',
+    'tag': ['React', 'SCSS', 'Bootstrap', 'axios', 'Express']
   },
   {
     'image': simple_dashboard,
     'title': 'Simple Dashboard',
     'content': '簡易的戶口統計網站，串接政府資料開放平臺所提供的API資料，並以圖表型式呈現。',
     'link': 'https://github.com/mirageapache/Simple_Dashboard',
-    'tag': ['Scss', 'React', 'axios', 'TypeScript', 'Highcharts']
+    'demo_link': 'https://mirageapache.github.io/Simple_Dashboard',
+    'tag': ['React', 'SCSS', 'axios', 'TypeScript', 'Highcharts']
   },
   {
     'image': live_chat_app,
     'title': 'Live Chat',
     'content': '使用 React 框架搭配 Socket.io 套件，製作線上聊天室系統。',
     'link': 'https://github.com/mirageapache/Socketio_chat_app',
-    'tag': ['Scss', 'React', 'TypeScript', 'Socket.io', 'Express']
+    'demo_link': 'https://mirageapache.github.io/Socketio_chat_app/',
+    'tag': ['React', 'SCSS', 'TypeScript', 'Socket.io', 'Redux Toolkit', 'Express']
   },
 ]

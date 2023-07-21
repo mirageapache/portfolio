@@ -54,7 +54,16 @@ function ProjectItem({ data }){
         </div>
         <div className='description'>
           <div className='text'>
-            <p className='title'>{item.title}</p>
+            <p className='title'>
+              {item.title}
+            </p>
+            {item.demo_link !== ''?
+              <p className='demo_link' onClick={()=>{window.open(item.demo_link,'_blank')}}>
+                Live Demo
+              </p>
+              :
+              <></>
+            }
             <p className='content'>{item.content}</p>
           </div>
           <div className='tags_div'>
