@@ -1,4 +1,4 @@
-import 'styles/css/portfolio.css';
+import '../styles/scss/portfolio.scss';
 import { portfolio_data } from 'assets/dummyData/portfolio_data.js';
 import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 

@@ -1,4 +1,4 @@
-import 'styles/css/aboutMe.css'
+import '../styles/scss/aboutMe.scss'
 import avatar from 'assets/images/avatar.jpg';
 import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 

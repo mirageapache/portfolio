@@ -1,4 +1,4 @@
-import 'styles/css/contact.css';
+import '../styles/scss/contact.scss';
 import { ReactComponent as IconEmail } from 'assets/icons/email.svg';
 import { ReactComponent as IconGithub } from 'assets/icons/github.svg';
 import { ReactComponent as IconLinkedIn } from 'assets/icons/linkedin.svg';

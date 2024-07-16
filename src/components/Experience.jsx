@@ -1,4 +1,4 @@
-import 'styles/css/experience.css'
+import '../styles/scss/experience.scss'
 import { secq_data } from 'assets/dummyData/exp_data.js'
 import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 

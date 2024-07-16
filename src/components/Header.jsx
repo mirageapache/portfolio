@@ -1,4 +1,4 @@
-import 'styles/css/header.css'
+import '../styles/scss/header.scss'
 import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 
 export default function Header(){

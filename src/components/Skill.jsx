@@ -1,15 +1,15 @@
-import 'styles/css/skill.css'
-import { ReactComponent as IconCode} from 'assets/icons/code.svg'
-import { ReactComponent as IconGlobe} from 'assets/icons/globe.svg'
+import '../styles/scss/skill.scss';
+import { ReactComponent as IconCode} from 'assets/icons/code.svg';
+import { ReactComponent as IconGlobe} from 'assets/icons/globe.svg';
+import { ReactComponent as IconDataBase} from 'assets/icons/db.svg';
 import { ReactComponent as IconDownArrow } from 'assets/icons/arrow_down.svg';
 
-const web_dev = ['HTML5', 'CSS/SCSS',
-                  'Bootrstrap', 'JavaScript',
-                  'NodeJs', 'Express',
-                  'Axios',
-                  'ReactJS', 'Git'
+const frontEnd = ['HTML5', 'CSS/SCSS', 'JavaScript',
+                  'Bootrstrap', 'Tailwind', 'ReactJS', 'Redux',
+                  'ReactQuery', 'GraphQL', 'TypeScript'
                 ];
-const language = ['Chinese', 'Taiwanese', 'English', 'French'];
+const backEnd = ['Node.js', 'Express', 'MongoDB', 'FireBase']
+const language = ['中文', 'English', '日本語'];
 
 
 export default function Skill(){
@@ -38,8 +38,9 @@ export default function Skill(){
           <h1 className="title skill_title">SKILL</h1>
         </div>
         <div className='card_panel'>
-          <Card title='Web development' icon={<IconCode />} style_name='dev_item' list={web_dev}/>
-          <Card title='Language' icon={<IconGlobe />} style_name='lang_item' list={language}/>
+          <Card title='FrontEnd Skill' icon={<IconCode />} style_name='dev_item' list={frontEnd}/>
+          <Card title='BackEnd Skill' icon={<IconDataBase />} style_name='lang_item' list={backEnd}/>
+          {/* <Card title='Language' icon={<IconGlobe />} style_name='lang_item' list={language}/> */}
         </div>
         <div className='scroll_btn_div'>
           <IconDownArrow className='scroll_btn' onClick={handleScroll}/>
@@ -54,7 +55,9 @@ function Card({ title, icon, style_name, list }){
     <div className='card'>
       <span className='icon'>{icon}</span>
       <h3>{title}</h3>
-      <ListItem style_name={style_name} list={list} />
+      <div className='item_panel'>
+        <ListItem style_name={style_name} list={list} />
+      </div>
     </div>
   )
 }
