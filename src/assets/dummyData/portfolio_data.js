@@ -13,7 +13,7 @@ export const portfolio_data = [
       "個人網站，使用 React 框架及 RWD 模式開發，並使用Github Pages部署。",
     link: "https://github.com/mirageapache/portfolio",
     demo_link: "https://mirageapache.github.io/portfolio/",
-    tag: ["React", "SCSS", "Github Pages"],
+    tag: ["React", "SCSS", "RWD", "Github Pages"],
   },
   {
     image: blog_system,
@@ -24,6 +24,7 @@ export const portfolio_data = [
     tag: [
       "React",
       "Tailwind",
+      "RWD",
       "TypeScript",
       "Redux",
       "ReactQuery",

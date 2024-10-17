@@ -49,6 +49,7 @@
           width: 270px;
           height: 210px;
           cursor: pointer;
+          object-fit: contain;
         }
         &::before {
           content: '';
