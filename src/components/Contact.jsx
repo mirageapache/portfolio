@@ -2,7 +2,6 @@ import '../styles/scss/contact.scss';
 import { ReactComponent as IconEmail } from 'assets/icons/email.svg';
 import { ReactComponent as IconGithub } from 'assets/icons/github.svg';
 import { ReactComponent as IconLinkedIn } from 'assets/icons/linkedin.svg';
-// import { ReactComponent as IconInstagram } from 'assets/icons/instagram.svg';
 
 export default function Contact(){
   window.addEventListener('scroll', () => {
@@ -30,30 +29,24 @@ export default function Contact(){
           <h1 className="title contact_title">CONTACT</h1>
         </div>
         <div className='contact_list'>
-          <div className='contact_card' onClick={()=>{window.open('mailto:mirageapache@gmail.com','_blank')}}>
+          <div id='email-link' className='contact_card' onClick={()=>{window.open('mailto:mirageapache@gmail.com','_blank')}}>
             <div className='item'>
               <IconEmail className='icon email_icon' />
               <h3 className='item_title'>Email</h3>
             </div>
           </div>
-          <div className='contact_card' onClick={()=>{window.open('https://github.com/mirageapache','_blank')}}>
+          <div id='github-link' className='contact_card' onClick={()=>{window.open('https://github.com/mirageapache','_blank')}}>
             <div className='item'>
               <IconGithub className='icon github_icon' />
               <h3 className='item_title'>Github</h3>
             </div>
           </div>
-          <div className='contact_card' onClick={()=>{window.open('https://www.linkedin.com/in/james-859032112/','_blank')}}>
+          <div id='linkedin-link' className='contact_card' onClick={()=>{window.open('https://www.linkedin.com/in/james-859032112/','_blank')}}>
             <div className='item'>
               <IconLinkedIn className='icon Linkedin_icon' />
               <h3 className='item_title'>Linkedin</h3>
             </div>
           </div>
-          {/* <div className='contact_card' onClick={()=>{window.open('https://www.instagram.com/mirageapache/','_blank')}}>
-            <div className='item'>
-              <IconInstagram className='icon instagram_icon' />
-              <h3 className='item_title'>instagram</h3>
-            </div>
-          </div> */}
         </div>
       </section>
     </>

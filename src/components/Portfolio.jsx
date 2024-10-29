@@ -49,7 +49,7 @@ function ProjectItem({ data }){
     return(
       <div key={index} className='project_item'>
         <div className='snapshot_div'>
-          <span className='link' onClick={()=>{window.open(item.link,'_blank')}}></span>
+          <span id={`${item.id}-github`} className='link' onClick={()=>{window.open(item.link,'_blank')}}></span>
           <img className='snapshot' src={item.image} alt=''  />
         </div>
         <div className='description'>
@@ -58,7 +58,7 @@ function ProjectItem({ data }){
               {item.title}
             </p>
             {item.demo_link !== ''?
-              <p className='demo_link' onClick={()=>{window.open(item.demo_link,'_blank')}}>
+              <p id={`${item.id}-demo`} className='demo_link' onClick={()=>{window.open(item.demo_link,'_blank')}}>
                 Live Demo
               </p>
               :
