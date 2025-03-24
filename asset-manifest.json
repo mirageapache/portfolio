@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.526eea00.css",
-    "main.js": "/portfolio/static/js/main.79181fd0.js",
+    "main.js": "/portfolio/static/js/main.33687f57.js",
     "static/media/blog_system.png": "/portfolio/static/media/blog_system.760ce5ae85cc6c034bed.png",
     "static/media/simple_twitter.png": "/portfolio/static/media/simple_twitter.37950f6760aa4c0efb68.png",
     "static/media/canal_1.jpg": "/portfolio/static/media/canal_1.30887786c304144d5641.jpg",
@@ -9,7 +9,7 @@
     "static/media/github_issue.jpg": "/portfolio/static/media/github_issue.80ea12c7f28c1bbbfd6e.jpg",
     "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.03c68d78c3d0c07fc3bb.jpg",
     "static/media/skill_page.jpg": "/portfolio/static/media/skill_page.d3b5e6b9de749b0b1ea0.jpg",
-    "static/media/simple_dashboard.jpg": "/portfolio/static/media/simple_dashboard.4d721a8ca759a213c64f.jpg",
+    "static/media/fire_message.png": "/portfolio/static/media/fire_message.f8959a82b032c0c036be.png",
     "static/media/live_chat_app.jpg": "/portfolio/static/media/live_chat_app.f6df3a234a18a83d6574.jpg",
     "static/media/github.svg": "/portfolio/static/media/github.ebd452bf402237ef25876cdcac686676.svg",
     "static/media/globe.svg": "/portfolio/static/media/globe.2e98d887a7dedf202ab77e2707307826.svg",
@@ -20,10 +20,10 @@
     "static/media/email.svg": "/portfolio/static/media/email.7df8d589eacd0a7f40f5685b6e551065.svg",
     "static/media/arrow_down.svg": "/portfolio/static/media/arrow_down.dd1d0bacbe7b907998696bf4e5570fe8.svg",
     "main.526eea00.css.map": "/portfolio/static/css/main.526eea00.css.map",
-    "main.79181fd0.js.map": "/portfolio/static/js/main.79181fd0.js.map"
+    "main.33687f57.js.map": "/portfolio/static/js/main.33687f57.js.map"
   },
   "entrypoints": [
     "static/css/main.526eea00.css",
-    "static/js/main.79181fd0.js"
+    "static/js/main.33687f57.js"
   ]
 }
